@@ -1,0 +1,75 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    margin-bottom: 0.3rem;
+    color: #ffd700;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+/* 2 Kolom (Desktop) */
+@media (min-width: 900px) {
+    main {
+        flex-direction: row;
+    }
+}
+
+/* Panel Kontrol */
+.control-panel {
+    background: #1b1b1b;
+    padding: 1.5rem;
+    border-radius: 15px;
+    flex: 1;
+}
+
+.control-panel h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    margin: 0.7rem 0 0.2rem;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    background: #222;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 8px;
+    margin-bottom: .7rem;
+    color: white;
+}
+
+/* Preview */
+.preview-card {
+    background: #1b1b1b;
+    padding: 1.5rem;
+    flex: 1;
+    border-radius: 15px;
+}
+
+.preview-card h3 {
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    color: #ffd700;
+}
