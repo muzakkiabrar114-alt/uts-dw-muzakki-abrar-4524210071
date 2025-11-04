@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fighter Profile Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>Fighter Profile Generator</h1>
+    <p>KARTU PROFIL FIGHTER</p>
+</header>
+
+<main>
+    <form class="control-panel">
+        <h2>Isi Detail Profil Anda</h2>
+        <label for="nama">Nama fighter:</label>
+        <input type="text" id="nama" placeholder="Isi Nama" />
+
+        <label for="sabuk">Tingkat Sabuk:</label>
+        <input type="text" id="sabuk" placeholder="sabuk" />
+
+        <label for="berat">Kelas Berat:</label>
+        <input type="text" id="berat" placeholder="berat" />
+
+        <label for="perguruan">Perguruan:</label>
+        <input type="text" id="perguruan" placeholder="perguruan" />
+
+        <label for="style">Style Bertarung:</label>
+        <input type="text" id="style" placeholder="style" />
+
+        <label for="prestasi">Prestasi:</label>
+        <input type="text" id="prestasi" placeholder="prestasi" />
+
+        <label for="deskripsi">Deskripsi:</label>
+        <textarea id="deskripsi" placeholder="isi deskripsi"></textarea>
+    </form>
+
+    <section class="preview-card">
+        <h2>Kartu Profil Fighter</h2>
+
+        <h3 id="preview-nama">Nama Fighter</h3>
+
+        <p><strong>Tingkat Sabuk:</strong> <span id="preview-sabuk">-</span></p>
+        <p><strong>Kelas Berat:</strong> <span id="preview-berat">-</span></p>
+        <p><strong>Perguruan:</strong> <span id="preview-perguruan">-</span></p>
+        <p><strong>Style Bertarung:</strong> <span id="preview-style">-</span></p>
+        <p><strong>Prestasi:</strong> <span id="preview-prestasi">-</span></p>
+        <p id="preview-deskripsi">Deskripsi fighter akan tampil di sini...</p>
+
+    </section>
+</main>
+
+<footer>
+    © 2025 Fighter Profile Generator by Muzakki Abrar
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
